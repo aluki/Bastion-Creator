@@ -73,6 +73,7 @@ configura_repos(){
   sed -i '/iso9660/d' /etc/fstab
   sed -i '/sr0/d' /etc/fstab
   echo /dev/sr0 /media/disc iso9660 defaults 0 0 >> /etc/fstab
+  mount /media/disc
 }
 
 #-----------------------------------------------------------------------
