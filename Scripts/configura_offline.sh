@@ -72,7 +72,7 @@ configura_repos(){
   # Crea el auto montaje
   sed -i '/iso9660/d' /etc/fstab
   sed -i '/sr0/d' /etc/fstab
-  echo /dev/sr0 /mnt/disc iso9660 default 0 0 >> /etc/fstab
+  echo /dev/sr0 /mnt/disc iso9660 defaults 0 0 >> /etc/fstab
 }
 
 #-----------------------------------------------------------------------
